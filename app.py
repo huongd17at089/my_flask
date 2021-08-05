@@ -14,7 +14,7 @@ def user(name):
     return f"hello {name}!"
 
 @app.route("/run")
-def init():
+def run():
     global sess
     sess = tf.compat.v1.Session()
     tf.compat.v1.keras.backend.set_session(sess)
